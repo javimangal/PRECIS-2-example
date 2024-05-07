@@ -5,6 +5,13 @@ authors:
   - family-names: Mancilla Galindo
     given-names: Javier
     orcid: https://orcid.org/0000-0002-0718-467X
+version: 1.0.0
+date-released: 2024-05-07
+license: MIT
+repository-code: "https://github.com/javimangal/PRECIS-2-example"
+preferred-citation:
+  type: article
+  authors:
   - family-names: Kammar-García
     given-names: Ashuin
     orcid: https://orcid.org/0000-0002-3875-0945
@@ -14,8 +21,14 @@ authors:
   - family-names: Guevara-Díaz
     given-names: Jorge Alberto 
     orcid: https://orcid.org/0000-0002-9500-1780
-version: 1.0.0
-date-released: 2024-05-07
-doi: 
-license: MIT
-repository-code: "https://github.com/javimangal/PRECIS-2-example"
+  - family-names: Mancilla Galindo
+    given-names: Javier
+    orcid: https://orcid.org/0000-0002-0718-467X
+  doi: "10.20944/preprints202405.0385.v1"
+  journal: "Preprints"
+  month: 5
+  start: 2024050385 # First page number
+  title: "Statistical Considerations for the Design and Analysis of Pragmatic Trialsin Aging Research"
+  issue: #1
+  volume: #1
+  year: 2024

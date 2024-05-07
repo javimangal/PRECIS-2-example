@@ -1,13 +1,15 @@
+# PRECIS-2 Example
+
+![Static Badge](https://img.shields.io/badge/preprint-10.20944%2Fpreprints202405.0385.v1-yellow?link=https%3A%2F%2Fwww.preprints.org%2Fmanuscript%2F202405.0385%2Fv1)
+
+This repository contains an example of the comparison of two hypothetical trials in aging research, one of which is explanatory and the second of which is pragmatic in nature. This figure was used in the associated review article *[Statistical Considerations for the Design and Analysis of Pragmatic Trialsin Aging Research](https://www.preprints.org/manuscript/202405.0385/v1)*.
+
 <br/>
 <p align="center">
   <a href="https://github.com/javimangal/PRECIS-2-example">
     <img src="Figure_PRECIS2.png" alt="PRECIS-2 score of 2 hypothetical trials" width="80%">
   </a>
 </p>
-
-# PRECIS-2-example
-
-This repository contains an example of the comparison of two hypothetical trials in aging research, one of which is explanatory and the second of which is pragmatic in nature.
 
 # Usage
 
