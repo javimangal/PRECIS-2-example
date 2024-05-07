@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Statistical considerations for the design and analysis of pragmatic trials in aging research"
+authors:
+  - family-names: Mancilla Galindo
+    given-names: Javier
+    orcid: https://orcid.org/0000-0002-0718-467X
+  - family-names: Kammar-García
+    given-names: Ashuin
+    orcid: https://orcid.org/0000-0002-3875-0945
+  - family-names: Fernández-Urrutia
+    given-names: Liliana Aline
+    orcid: https://orcid.org/0009-0001-9252-2636
+  - family-names: Guevara-Díaz
+    given-names: Jorge Alberto 
+    orcid: https://orcid.org/0000-0002-9500-1780
+version: 1.0.0
+date-released: 2024-05-07
+doi: 
+license: MIT
+repository-code: "https://github.com/javimangal/PRECIS-2-example"
