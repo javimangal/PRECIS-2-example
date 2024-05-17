@@ -1,0 +1,66 @@
+---
+title: "Useful R packages for the analysis of randomized controlled trials"
+author: 
+  - "Javier Mancilla Galindo"
+date: today
+execute: 
+  echo: true
+  warning: false
+toc: false
+format:
+  docx:
+    highlight-style: github
+csl: geriatrics.csl
+editor: source
+---
+
+A full list of useful R packages for the design, monitoring, and analysis of randomized controlled trials can be consulted in this website (CITATION). All these packages can be installed through the `ctv` package by running `ctv::install.views("ClinicalTrials", coreOnly = TRUE)`. 
+
+Citation: 
+Ed Zhang, W. G. Zhang, R. G. Zhang (2021). CRAN Task View: Clinical Trial Design, Monitoring, and Analysis. Version 2021-12-29. URL https://CRAN.R-project.org/view=ClinicalTrials.
+
+We would like to make special mention of the following  R packages:  
+```{r}
+
+if (!require("pacman", quietly = TRUE)) {
+  install.packages("pacman")
+}
+
+pacman::p_load(
+  table1, # Create table of baseline characteristics
+  nlme, # Mixed effects models 
+  rms, # Regression modelling strategies.
+  Hmisc, # Miscelaneous functions on top of rms
+  mice, # Data imputation
+  geeCRT # bias-corrected generalized estimating equations (GGE) for 
+          # cluster randomized controlled trials
+)
+
+```
+
+```{r}
+#| include: false
+session <- sessionInfo()
+# remove clutter
+session$BLAS <- NULL
+session$LAPACK <- NULL
+session$loadedOnly <- NULL
+
+session
+```
+
+```{r}
+#| include: false
+report::cite_packages(session)
+```
+
+# Package references 
+
+  - Harrell Jr F (2024). _Hmisc: Harrell Miscellaneous_. R package version 5.1-2, <https://CRAN.R-project.org/package=Hmisc>.
+  - Harrell Jr FE (2024). _rms: Regression Modeling Strategies_. R package version 6.8-0, <https://CRAN.R-project.org/package=rms>.
+  - Pinheiro J, Bates D, R Core Team (2023). _nlme: Linear and Nonlinear Mixed Effects Models_. R package version 3.1-164, <https://CRAN.R-project.org/package=nlme>. Pinheiro JC, Bates DM (2000). _Mixed-Effects Models in S and S-PLUS_. Springer, New York. doi:10.1007/b98882 <https://doi.org/10.1007/b98882>.
+  - R Core Team (2024). _R: A Language and Environment for Statistical Computing_. R Foundation for Statistical Computing, Vienna, Austria. <https://www.R-project.org/>.
+  - Rich B (2023). _table1: Tables of Descriptive Statistics in HTML_. R package version 1.4.3, <https://CRAN.R-project.org/package=table1>.
+  - Rinker TW, Kurkiewicz D (2018). _pacman: Package Management for R_. version 0.5.0, <http://github.com/trinker/pacman>.
+  - van Buuren S, Groothuis-Oudshoorn K (2011). “mice: Multivariate Imputation by Chained Equations in R.” _Journal of Statistical Software_, *45*(3), 1-67. doi:10.18637/jss.v045.i03 <https://doi.org/10.18637/jss.v045.i03>.
+  - Yu H, Li F, Rathouz P, Turner E, Preisser J (2024). _geeCRT: Bias-Corrected GEE for Cluster Randomized Trials_. R package version 1.1.3, <https://CRAN.R-project.org/package=geeCRT>.
