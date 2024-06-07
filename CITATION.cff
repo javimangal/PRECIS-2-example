@@ -24,11 +24,12 @@ preferred-citation:
   - family-names: Mancilla Galindo
     given-names: Javier
     orcid: https://orcid.org/0000-0002-0718-467X
-  doi: "10.20944/preprints202405.0385.v1"
-  journal: "Preprints"
-  month: 5
-  start: 2024050385 # First page number
+  doi: "10.3390/geriatrics9030075"
+  journal: "Geriatrics"
+  month: 6
+  start: 75 # First page number
+  end: 75 # Last page number
   title: "Statistical Considerations for the Design and Analysis of Pragmatic Trials in Aging Research"
-  issue: #1
-  volume: #1
+  issue: 3
+  volume: 9
   year: 2024

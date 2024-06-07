@@ -1,3 +1,15 @@
+#### About this script ####
+## Title: PRECIS-2 trial comparation figure
+## Author: Javier Mancilla-Galindo
+## ORCiD: https://orcid.org/0000-0002-0718-467X
+##
+## Purpose: Creates a figure of 2 "radar" or "spider-web" diagrams to
+## compare two hypothetical trials according to the elements in PRECIS-2.
+## For more information about the PRECIS-2 tool, refer to:
+## https://www.precis-2.org/Help/Documentation/Help
+
+#### Load packages ####
+
 if (!require("pacman", quietly = TRUE)) {
   install.packages("pacman")
 }
@@ -7,6 +19,8 @@ pacman::p_load(
   ggiraphExtra,
   table1
 )
+
+#### Assign values for each trial ####
 
 data <- data.frame(
   Trial = c("Trial 1","Trial 2"),
@@ -21,6 +35,8 @@ data <- data.frame(
   Analysis = c(3,5)
   )
 
+#### Labels to render figure ####
+
 table1::label(data$Trial) <- "Trial"
 table1::label(data$Eligibility) <- "Eligibility"
 table1::label(data$Recruitment) <- "Recruitment"
@@ -31,6 +47,8 @@ table1::label(data$Flexibility_adherence) <- "Flexibility (adherence)"
 table1::label(data$Followup) <- "Follow up"
 table1::label(data$Outcome) <- "Primary outcome"
 table1::label(data$Analysis) <- "Primary analysis"
+
+#### Plot ####
 
 figure <- ggRadar(
   data = data,
@@ -59,6 +77,8 @@ figure <- ggRadar(
     legend.position = "none"
   )
 
+#### Save ####
+
 ggsave("Figure_PRECIS2.png",
        plot = figure,
        width = 10,
@@ -67,6 +87,7 @@ ggsave("Figure_PRECIS2.png",
        dpi = 300
 )
 
+#### Unload packages and clean global environment ####
 pacman::p_unload(negate = TRUE)
 
 rm(list = ls())
